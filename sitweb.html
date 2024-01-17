@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMINA S FIRST WEBSITE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="FIRST.css">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* header partie*/
+header{
+    background-color: antiquewhite;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo{
+    text-decoration: none;
+    color:rgb(19, 97, 133);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.navigation a{
+color: rgb(19, 97, 133);
+text-decoration: none;
+font-size: 1.1em;
+font-weight: 500;
+padding-left: 30px;
+}
+.navigation a:hover{
+    color: rgb(101, 89, 172);
+}
+/* header partie est terminer*/
+/* contenu de la page web*/
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(wp7047282-simple-color-wallpapers.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2{
+    color:rgb(9, 41, 71);
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 10px;
+    color: rgb(24, 24, 73);
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.main h3{
+    color: blueviolet;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main-btn{
+    color: beige;
+    background-color: rgb(43, 43, 130);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px; 
+    transition: 0.7s ease; 
+}
+.main-btn:hover{
+background-color: rgb(117, 35, 142);
+transform: scale(1.1);
+}
+.social-icones a{
+    color: rgb(7, 7, 79);
+    font-size: 1.7em;
+    padding-right: 30px;
+
+}
+.title {
+    display: flex;
+    justify-content: center;
+color: rgb(38, 69, 149);
+font-size: 2.2em;
+font-weight: 800;
+margin-bottom: 30px;
+
+}
+.content{
+display:flex;
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+.card{
+    background-color: white;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.7s ease; 
+
+}
+.icon{
+color: rgb(68, 10, 83);
+font-size: 8em;
+text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+
+.info h3{
+    color: rgb(0, 72, 255);
+    font-size: 1.2em;
+    font-weight: 700;
+    max-width: 10px;
+}
+.Projects{
+    background-color: powderblue;
+}
+.Projects .content{
+    margin-top: 30px;
+
+}
+.Projects .card{
+    background-color: aliceblue;
+ border: 5px solid white;
+ min-height: 14em;
+ width: 23em;
+ overflow: hidden;
+ border-radius: 10px;
+ margin: 20px;
+ transition: 0.7s ease;
+}
+.Projects-card:hover{
+    transform: scale(1.1);
+}
+.Projects-image img{
+width: 100%;
+
+}
+.Projects-card:hover .Projects-image{
+opacity: 0.9;
+}
+.Projects-info{
+    padding: 1em;
+
+}
+.Projects-category{
+    font-size: 0.8em;
+    color: rgb(67, 43, 226);
+}
+.Projects-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+
+}
+.more-details{
+    text-decoration: none;
+    color: blue;
+
+}
+.more-details:hover{
+    color: rgb(81, 255, 0);
+}
+.contact .icon{
+font-size: 4.5em;
+
+}
+.contact .info .h3{
+color: black;
+}
+.contact .info p{
+    font-size: 1.5em;
+}
+.footer {
+    background-color: antiquewhite;
+    color: rgb(14, 75, 108);
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title span{
+    color: rgb(0, 166, 255);
+}
+.footer .social-icones a{
+font-size: 1.3em;
+padding: 0 12px 0 0;
+}
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation{
+       padding-left: 10px;
+    }
+    .title{
+font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main-content h2{
+font-size: 1em;
+    }
+    .main-content h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width:641px){
+   body{
+    font-size: 12px;
+   }
+   .main-content{
+    font-size: 0.8em;
+   }
+}
+@media(max-width){
+    body{
+        font-size: 10px;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <a href="#" class="logo">AMINA</a>
+<nav class="navigation">
+<a href="#Services">Services</a>
+<a href="#Projects">Projects</a>
+<a href="#Contact">Contact</a>
+</nav>
+ </header>
+ <section class="main">
+<div>
+    <h2>HELLO I`M AMINA<br><span>CONTENT CREATOR</span></h2>
+    <h3>I'M PHOTOGRAPHER</h3>
+    <a href="#Projects"  class="main-btn">VIEW MY WORK</a>
+<div class="social-icones">  
+    <a href="#Contact"><i class="fab fa-instagram"></i></a>
+    <a href="#Contact"><i class="fab fa-whatsapp"></i></a>
+    <a href="#Contact"><i class="fas fa-phone"></i> </i></a>
+</div>
+</div>
+ </section>
+ <section class="cards" id="Services">
+ <h2 class="title">Services</h2>
+ <div class="content">
+ <div class="card">
+     <div class="icon">
+        <i class="fas fa-camera"></i> </div>
+         <div class="info">
+             <h3>PHOTOGRAPHER</h3></div>
+             <p>take photo  with height quality</p>
+ </div>
+</div>
+
+<div class="card">
+    <div class="icon">
+        <i class="fas fa-video"></i></div>
+        <div class="info">
+            <h3 >video production</h3></div>
+            <p>make video with hight quality </p>
+</div>
+</div>
+
+
+
+<section class="Projects" id="Projects">
+    <h2 class="title">Projects</h2>
+    <div class="content">
+    <div class="Projects-card">
+        <div class="Projects-image">
+            <img src="img2.jpeg">
+        </div>
+        <div class="Projects-info">
+            <p class="Projects-category">PHOTOGRAPHER & video production</p>
+            <strong class="Projects-title">
+                <span></span>
+                <a href="#" class="more-details">more details</a>
+            </strong>
+        </div>
+    </div>
+
+
+    <div class="Projects-card">
+        <div class="Projects-image">
+            <img src="img7.jpeg">
+        </div>
+        <div class="Projects-info">
+            <p class="Projects-category">PHOTOGRAPHER & video production</p>
+            <strong class="Projects-title">
+                <span></span>
+                <a href="#" class="more-details">more details</a>
+            </strong>
+        </div>
+    </div>
+
+    <div class="Projects-card">
+        <div class="Projects-image">
+            <img src="img10.jpeg">
+        </div>
+        <div class="Projects-info">
+            <p class="Projects-category">PHOTOGRAPHER & video production</p>
+            <strong class="Projects-title">
+                <span></span>
+                <a href="#" class="more-details">more details</a>
+            </strong>
+        </div>
+    </div>
+
+    <div class="Projects-card">
+        <div class="Projects-image">
+            <img src="img11.jpeg">
+        </div>
+        <div class="Projects-info">
+            <p class="Projects-category">PHOTOGRAPHER & video production</p>
+            <strong class="Projects-title">
+                <span></span>
+                <a href="#" class="more-details">more details</a>
+            </strong>
+        </div>
+    </div>
+
+    <div class="Projects-card">
+        <div class="Projects-image">
+            <img src="img9.jpeg">
+        </div>
+        <div class="Projects-info">
+            <p class="Projects-category">PHOTOGRAPHER & video production</p>
+            <strong class="Projects-title">
+                <span></span>
+                <a href="#" class="more-details">more details</a>
+            </strong>
+        </div>
+    </div>
+
+    <div class="Projects-card">
+        <div class="Projects-image">
+            <img src="img4.jpg">
+        </div>
+        <div class="Projects-info">
+            <p class="Projects-category">PHOTOGRAPHER & video production</p>
+            <strong class="Projects-title">
+                <span></span>
+                <a href="#" class="more-details">more details</a>
+            </strong>
+        </div>
+    </div>
+
+    <div class="Projects-card">
+        <div class="Projects-image">
+            <img src="img8.jpg">
+        </div>
+        <div class="Projects-info">
+            <p class="Projects-category">PHOTOGRAPHER & video production</p>
+            <strong class="Projects-title">
+                <span></span>
+                <a href="#" class="more-details">more details</a>
+            </strong>
+        </div>
+    </div>
+
+    <div class="Projects-card">
+        <div class="Projects-image">
+            <img src="img13.jpeg">
+        </div>
+        <div class="Projects-info">
+            <p class="Projects-category">PHOTOGRAPHER & video production</p>
+            <strong class="Projects-title">
+                <span></span>
+                <a href="#" class="more-details">more details</a>
+            </strong>
+        </div>
+    </div>
+
+    <div class="Projects-card">
+        <div class="Projects-image">
+            <img src="img15.jpeg">
+        </div>
+        <div class="Projects-info">
+            <p class="Projects-category">PHOTOGRAPHER & video production</p>
+            <strong class="Projects-title">
+                <span></span>
+                <a href="#" class="more-details">more details</a>
+            </strong>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="cards contact" id="Contact">
+<h2 class="title">lets work together</h2>
+<div class="content">
+    <div class="card">
+        <div class="icon">
+            <i class="fas fa-phone"></i></div>
+            <div class="info">
+                <h3>phone</h3></div>
+                <p>+212 6 58 79 15 00</p>
+    </div>
+   </div>
+   
+   <div class="card">
+       <div class="icon">
+        <i class="fas fa-envelope"></i></div>
+           <div class="info">
+               <h3 >email</h3></div>
+               <p>amina.lrhorfi.2004@gmail.com</p>
+   </div>
+   </div>
+</div>
+</section>
+<footer class="footer">
+<p class="footer-title">copyrights@<span>amina lrhorfi</span></p>
+<div class="social-icones">  
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-whatsapp"></i></a>
+    <a href="#"><i class="fas fa-phone"></i> </i></a>
+</div>
+</footer>
+    
+</body>
+</html>
